@@ -4,40 +4,18 @@ import React from 'react'
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-diamond"></span>
+      <span className="icon fa-flask"></span>
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>Godwin Oluwafemi</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
-          <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          Personal Website
         </p>
       </div>
     </div>
     <nav>
       <ul>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('intro')
-            }}
-          >
-            Intro
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('work')
-            }}
-          >
-            Work
-          </button>
-        </li>
         <li>
           <button
             onClick={() => {
@@ -50,10 +28,19 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('contact')
+              props.onOpenArticle('work')
             }}
           >
-            Contact
+            My Work
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              window.open("../Godwin Oluwafemi Resume.pdf")
+            }}
+          >
+            Resume
           </button>
         </li>
       </ul>

@@ -40,6 +40,7 @@ const Layout = ({ children, location }) => {
         <>
           <Helmet
             title={data.site.siteMetadata.title}
+            icon={data.site.siteMetadata.icon}
             meta={[
               { name: 'description', content: 'Sample' },
               { name: 'keywords', content: 'sample, something' },
